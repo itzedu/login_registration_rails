@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    redirect_to "/"
+    redirect_to :root
   end
 
   #create the session resource ie, let user log in

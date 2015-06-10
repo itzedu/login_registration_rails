@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   resources :messages, :only => [:create, :destroy]
   resources :comments, :only => [:create, :destroy]
   get "/sessions/destroy" => "sessions#destroy"
-  get "/signin", :to => 'sessions#new'
-  get "/signout", :to => 'sessions#destroy'
+  get "/signin" => 'users#index'
+  get "/signout" => 'sessions#destroy'
   root "users#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

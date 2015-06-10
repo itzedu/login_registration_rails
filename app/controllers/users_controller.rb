@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    fail
     @user = User.find(params[:id])
     @messages = Message.all
   end
