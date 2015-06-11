@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: login_development
   pool: 5
-  username: eduardobaik
+  username: ubuntu
   password:
 
 test:
@@ -11,7 +11,7 @@ test:
   encoding: unicode
   database: login_test
   pool: 5
-  username: eduardobaik
+  username: ubuntu
   password:
 
 production:
@@ -19,5 +19,5 @@ production:
   encoding: unicode
   database: login_production
   pool: 5
-  username: eduardobaik
+  username: ubuntu
   password:
